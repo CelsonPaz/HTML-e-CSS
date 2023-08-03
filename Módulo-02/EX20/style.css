@@ -1,0 +1,12 @@
+@charset "UTF-8";
+div{
+    display: inline-block;
+    background-color: gray;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    cursor: pointer;
+}
+div:hover{      /*Quando estiver com o mouse em cima mudar a cor para amarelo*/
+    background-color: yellow;
+}

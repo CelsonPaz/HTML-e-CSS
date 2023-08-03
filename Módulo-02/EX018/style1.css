@@ -1,0 +1,25 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'city';
+    src: url(fonts/UrbanJungleDEMO.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    /*
+    Tipos de format()
+    - opentype(otf)
+    - truetype(ttf)
+    - embedded-opentype
+    - truetype-aat(Aplle Advanced Typography)
+    - svg
+    */
+}
+body{
+    font: lighter 1.3em 'city';
+}
+h1{
+    text-align: center;
+    font-size: 3em;
+}
+p{
+    text-align: justify;
+}

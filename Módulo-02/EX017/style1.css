@@ -1,0 +1,9 @@
+@charset "UTF-8";
+body{
+    text-align: center;
+    font: normal 1em 'Arial', serif;
+}
+p{
+    text-align: justify;
+    text-indent: 2em;/*Margem quando começa o parágrafo*/
+}
