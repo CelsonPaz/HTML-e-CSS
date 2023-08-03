@@ -1,0 +1,38 @@
+@charset "UTF-8";
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    /*
+    background-color: black;
+    background-image: url('../Imagens/wallpaper002.jpg');
+    height: 100vh;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;/*corta as laterais da imagem e preenche a tela inteira*//*
+    background-attachment: fixed;
+    */
+    
+    /* 
+                Shorthand - background
+
+    color > image > repeat > attachment > position 
+
+    */
+    height: 100vh;
+    background: black url('../Imagens/wallpaper002.jpg')
+    no-repeat fixed center center;
+    background-size: cover;
+}
+main{
+    border: 1px solid black;
+    background-color: white;
+    max-width: 400px;
+    padding: 20px;
+    margin: auto;
+    border-radius: 10px;
+}
+main > *{
+    margin: 10px auto;
+}

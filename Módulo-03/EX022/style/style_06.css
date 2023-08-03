@@ -1,0 +1,25 @@
+@charset "UTF-8";
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#container{
+    position: relative;
+    height: 97.8vh;
+    padding: 10px;
+    background: purple url('../Imagens/target001.png') no-repeat ;
+    background-size: 100% 100%;
+}
+#conteudo{
+    position: absolute;
+    height: 200px;
+    width: 400px;
+    background: rgba(153, 205, 50, 0.247) url('../Imagens/target001.png') no-repeat ;
+    background-size: 100% 100%;
+
+    left: 50%;
+    top: 50%;
+
+    transform: translate(-50% , -50%);/*left top*/
+}
