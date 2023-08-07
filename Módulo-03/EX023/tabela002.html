@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Segunda tabela.</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            border-collapse: collapse;
+            position: relative;
+        }
+        caption{
+            font-size: 1.1em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: rgb(77, 77, 77);
+            color: white;
+            border: 1px solid black;
+        }
+        thead, tfoot{
+            background-color: rgb(77, 77, 77);
+            color: white;
+        }
+        thead > tr > th{
+            position: sticky;
+            top: -1px;
+            background-color: rgb(77, 77, 77);
+        }
+        tbody > tr:nth-child(even){/* = par ou 2n,odd = impar ou 2n-1*/
+            background-color: lightgrey;
+        }
+        th, td{
+            border: 1px solid black;
+            padding: 8px;
+        }
+        .população{
+            text-align: right;
+            padding-right: 15px;
+        }
+        td.posição{
+            text-align: center;
+            background-color: rgb(77, 77, 77);
+            color: white;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header></header>
+    <main>
+        <h1>Tabelas grandes</h1>
+        <!--
+            Anatomia de tabelas
+            TABLE
+                THEADE
+                    tr,td,th
+                TBODY
+                    tr,td,th
+                TFOOT
+                    tr,td,th
+        -->
+        <table>
+            <caption>População das unidades Federativas</caption>
+            <thead>
+                <tr>
+                    <th scope="col">Posição</th>
+                    <th scope="col">Estado</th>
+                    <th scope="col">População (Censo de 2022)</th>
+                </tr>
+            </thead>            
+            <tfoot>
+                <tr>
+                    <th colspan="2" scope="row">Total de Habitantes</th>
+                    <!--colspan faz com que o elemento expanda a quantidade de colunas do conteúdo e rowspan faz com que o elemento expanda a quantidade de linhas do conteúdo-->
+                    <td class="população"><strong>203 062 512</strong></td>
+                </tr>
+            </tfoot>
+            <tbody>
+                <tr>
+                    <td class="posição">1</td>
+                    <td>São Paulo</td>
+                    <td class="população">44 420 459</td>
+                </tr>
+                <tr>
+                    <td class="posição">2</td>
+                    <td>Minas Gerais</td>
+                    <td class="população">20 538 718</td>
+                </tr>
+                <tr>
+                    <td class="posição">3</td>
+                    <td>Rio de Janeiro</td>
+                    <td class="população">16 054 524</td>
+                </tr>
+                <tr>
+                    <td class="posição">4</td>
+                    <td>Bahia</td>
+                    <td class="população">14 136 417</td>
+                </tr>
+                <tr>
+                    <td class="posição">5</td>
+                    <td>Paraná</td>
+                    <td class="população">11 443 208</td>
+                </tr>
+                <tr>
+                    <td class="posição">6</td>
+                    <td>Rio Grande do Sul</td>
+                    <td class="população">10 880 506</td>
+                </tr>
+                <tr>
+                    <td class="posição">7</td>
+                    <td>Pernambuco</td>
+                    <td class="população">9 058 155</td>
+                </tr>
+                <tr>
+                    <td class="posição">8</td>
+                    <td>Ceará</td>
+                    <td class="população">8 791 688</td>
+                </tr>
+                <tr>
+                    <td class="posição">9</td>
+                    <td>Pará</td>
+                    <td class="população">8 116 132</td>
+                </tr>
+                <tr>
+                    <td class="posição">10</td>
+                    <td>Santa Catarina</td>
+                    <td class="população">7 609 601</td>
+                </tr>
+                <tr>
+                    <td class="posição">11</td>
+                    <td>Goiás</td>
+                    <td class="população">7 055 228</td>
+                </tr>
+                <tr>
+                    <td class="posição">12</td>
+                    <td>Maranhão</td>
+                    <td class="população">6 775 152	</td>
+                </tr>
+                <tr>
+                    <td class="posição">13</td>
+                    <td>Paraíba</td>
+                    <td class="população">3 974 495</td>
+                </tr>
+                <tr>
+                    <td class="posição">14</td>
+                    <td>Amazonas</td>
+                    <td class="população">3 941 175</td>
+                </tr>
+                <tr>
+                    <td class="posição">15</td>
+                    <td>Espírito Santo</td>
+                    <td class="população">3 833 486</td>
+                </tr>
+                <tr>
+                    <td class="posição">16</td>
+                    <td>Mato Grosso</td>
+                    <td class="população">3 658 813</td>
+                </tr>
+                <tr>
+                    <td class="posição">17</td>
+                    <td>Rio Grande do Norte</td>
+                    <td class="população">3 302 406</td>
+                </tr>
+                <tr>
+                    <td class="posição">18</td>
+                    <td>Piauí</td>
+                    <td class="população">3 269 200</td>
+                </tr>
+                <tr>
+                    <td class="posição">19</td>
+                    <td>Alagoas</td>
+                    <td class="população">3 127 511</td>
+                </tr>
+                <tr>
+                    <td class="posição">20</td>
+                    <td>Distrito Federal</td>
+                    <td class="população">2 817 068</td>
+                </tr>
+                <tr>
+                    <td class="posição">21</td>
+                    <td>Mato Grosso do Sul</td>
+                    <td class="população">2 756 700</td>
+                </tr>
+                <tr>
+                    <td class="posição">22</td>
+                    <td>Sergipe</td>
+                    <td class="população">2 209 558</td>
+                </tr>
+                <tr>
+                    <td class="posição">23</td>
+                    <td>Rondônia</td>
+                    <td class="população">1 581 016</td>
+                </tr>
+                <tr>
+                    <td class="posição">24</td>
+                    <td>Tocantins</td>
+                    <td class="população">1 511 459</td>
+                </tr>
+                <tr>
+                    <td class="posição">25</td>
+                    <td> Acre</td>
+                    <td class="população">830 026</td>
+                </tr>
+                <tr>
+                    <td class="posição">26</td>
+                    <td>Amapá</td>
+                    <td class="população">733 508</td>
+                </tr>
+                <tr>
+                    <td class="posição">27</td>
+                    <td>Roraima</td>
+                    <td class="população">636 303</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+    <footer></footer>
+</body>
+</html>
