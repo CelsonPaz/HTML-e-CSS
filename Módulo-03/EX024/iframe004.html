@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iframes</title>
+</head>
+<body>
+    <header></header>
+    <main>
+        <section>
+            <h1>Tornando iframes um pouco mais seguros.</h1>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, eius. Incidunt qui iusto, sit blanditiis reprehenderit fugiat ipsam, iure delectus non debitis aliquam quis rem repellendus veniam quam praesentium? Consequuntur?</p>
+
+            <!--setando a tag iframe com sandbox="sandbox" conseguimos deixar nosso site mais seguro
+
+            referrerpolicy="no-referer" limita a referencia do iframe-->
+
+            <iframe src="paginas-extras/page004.html" sandbox="allow-forms allow-scripts allow-same-origin" referrerpolicy="no-referrer">
+                <p>Seu navegador não é compativel.</p>
+            </iframe>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, eius. Incidunt qui iusto, sit blanditiis reprehenderit fugiat ipsam, iure delectus non debitis aliquam quis rem repellendus veniam quam praesentium? Consequuntur?</p>
+        </section>
+    </main>
+    <footer></footer>
+</body>
+</html>

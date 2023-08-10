@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iframes mais seguros</title>
+</head>
+<body>
+    <header></header>
+    <main>
+        <section>
+            <h1>iframes com scripts</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius autem minus veritatis officia quo natus dicta fugit? Atque placeat natus perspiciatis reprehenderit iure, nisi, cum ea assumenda voluptatem tenetur in.</p>
+            
+            <!--Apenas scripts liberados no iframe.-->
+
+            <iframe src="paginas-extras/page005.html" referrerpolicy="no-referrer" sandbox="allow-scripts">
+                <p>Seu navegador não suporta o conteúdo.</p>
+            </iframe>
+            
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius autem minus veritatis officia quo natus dicta fugit? Atque placeat natus perspiciatis reprehenderit iure, nisi, cum ea assumenda voluptatem tenetur in.</p>
+        </section>
+    </main>
+    <footer></footer>
+</body>
+</html>

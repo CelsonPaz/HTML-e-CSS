@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página extra005</title>
+    <style>
+        @charset "UTF-8";
+        body{
+            background-color: lightcoral;
+        }
+    </style>
+</head>
+<body>
+    <header></header>
+    <main>
+        <section>
+            <a href="#" onclick="clicou()">Clique aqui.</a>
+            <div id="saida"></div>
+
+            <script>
+                function clicou () {
+                    s = window.document.getElementById("saida")
+                    s.innerHTML += "<p>Você clicou.</p>"
+                }
+            </script>
+        </section>
+    </main>
+    <footer></footer>
+</body>
+</html>
