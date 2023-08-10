@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de iframe</title>
+    <style>
+        @charset "UTF-8";
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        iframe{
+            width: 100%;
+            height: 400px;
+            border: 1px solid black;
+        }
+        ul{
+            height: 100px;
+        }
+        li{
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header></header>
+    <main>
+        <section>
+            <h1>Faça uma escolha.</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique dolor itaque placeat aliquam exercitationem recusandae a necessitatibus alias explicabo, maiores molestiae quae ipsa libero excepturi debitis eius! Pariatur, corporis quidem?</p>
+
+            <nav>
+                <ul>
+                    <li><a href="paginas-extras/page001.html" target="frame">Primeira página.</a></li>
+                    <li><a href="paginas-extras/page002.html" target="frame">Segunda página.</a></li>
+                    <li><a href="paginas-extras/page003.html" target="frame">Terceira página.</a></li>
+                </ul>
+            </nav>
+            
+            <!--Setar um nome para um iframe e no link do conteúdo cologar target="name" renderiza a página do link no iframe.-->
+
+            <!--srcdoc pode colocar tags html seguidos inline para renderizar qualquer conteúdo estático e só aparece novamente se a página atualizar.-->
+
+            <iframe name="frame" srcdoc= "<h1>Escolha uma das opções acima</h1> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam reiciendis nesciunt quia aspernatur quis minima cupiditate temporibus nobis magni, ab, dignissimos exercitationem mollitia tempora inventore, eum numquam explicabo impedit atque.</p> "frameborder="0">
+                <p>Infelizmente seu navegador não é compatível com o conteúdo.</p>
+            </iframe>
+            
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique dolor itaque placeat aliquam exercitationem recusandae a necessitatibus alias explicabo, maiores molestiae quae ipsa libero excepturi debitis eius! Pariatur, corporis quidem? Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores pariatur exercitationem consequuntur, quo explicabo, iure ipsum suscipit nostrum earum culpa cupiditate adipisci architecto. Fugit nobis, recusandae dicta incidunt doloremque nulla.</p>
+
+        </section>
+    </main>
+    <footer></footer>
+</body>
+</html>
