@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <header></header>
+    <main>
+        <section>
+            <h1>Exemplo de formulário</h1>
+            <form action="cadastro.php" method="post">
+                <fieldset>
+                    <legend>Cores</legend>
+
+                    <p>
+                        <label for="icor">Cor</label>
+
+                        <input type="color" name="icor" id="icor" value="#00ff00">
+                    </p>
+
+                    <p>
+                        <label for="isat">Nível de satisfação</label>
+
+                        <input type="range" name="isat" id="isat" min="1" max="5" value="5">
+                    </p>
+
+                    <p>
+                        <label for="ifoto">Foto do perfil</label>
+
+                        <input type="file" name="ifoto" id="ifoto">
+                    </p>
+
+                </fieldset>
+                <p>
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Limpar">
+                </p>
+            </form>
+        </section>
+    </main>
+    <footer></footer>
+</body>
+</html>
